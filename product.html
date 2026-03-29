@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنتجات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    window.onload = function () {
+      document.getElementById("loader").style.display = "none";
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="" id="loader" style="width: 100%;">
+    <img src="assets/images/loader.gif" width="50" alt="">
+  </div>
+
+
+  <div class="main-wrapper">
+    <nav class="fixed-top">
+      <header class="header d-flex justify-content-between py-1">
+        <div class="right-header d-flex align-items-center gap-3">
+          <div class="logo d-none d-md-block ">
+            <a href="/">ادارة متجر سماعات </a>
+          </div>
+          <div class="px-3">
+
+          </div>
+          <a href="#"><i class="fa-solid fa-chart-bar" id="sidebar-toggle"></i> </a>
+          <form action="" class="d-none d-md-block">
+            <input type="search" class="form-control form-control-sm" placeholder="🔍 ابحث عن منتج">
+
+          </form>
+        </div>
+
+        <div class="left-header d-flex align-items-center gap-3 px-3">
+          <div class="icons d-flex gap-3">
+            <a href="#" class="position-relative bell" data-bs-toggle="tooltip" title="الإشعارات">
+              <i class="fa-regular fa-bell"></i>
+            </a>
+
+
+
+            <div class="messages-container position-relative" id="messages-container">
+
+              <i class="fa-regular fa-envelope"></i>
+
+              <div class="messages-area" id="messages-area">
+
+                <div class="messages-header">
+                  <h4>أحدث الرسائل</h4>
+                </div>
+
+
+                <div class="message-item unread">
+
+                  <img src="https://i.pravatar.cc/150?img=12" class="msg-avatar">
+
+                  <div class="msg-content">
+
+                    <div class="msg-top">
+                      <span class="msg-name">محمد محمود</span>
+                      <hr class="text-black">
+                      <span class="msg-time text-black">الآن</span>
+                    </div>
+
+                    <p class="msg-text">هل يوجد سماعة JBL Tune 510BT</p>
+
+                  </div>
+
+                  <span class="msg-badge">جديد</span>
+
+                </div>
+
+
+                <div class="message-item unread">
+
+                  <img src="https://i.pravatar.cc/150?img=15" class="msg-avatar">
+
+                  <div class="msg-content">
+
+                    <div class="msg-top">
+                      <span class="msg-name">زياد رجب</span>
+                      <hr>
+                      <span class="msg-time text-black">قبل 3 دقائق</span>
+                    </div>
+
+                    <p class="msg-text">هل المنتج Galaxy Buds2 متوفر؟</p>
+
+                  </div>
+
+                  <span class="msg-badge">جديد</span>
+
+                </div>
+
+
+                <div class="message-item">
+
+                  <img src="https://i.pravatar.cc/150?img=22" class="msg-avatar">
+
+                  <div class="msg-content">
+
+                    <div class="msg-top">
+                      <span class="msg-name">أحمد مندو</span>
+                      <hr>
+                      <span class="msg-time text-black">قبل 10 دقائق</span>
+                    </div>
+
+                    <p class="msg-text">أرغب بمعرفة سعر المنتج</p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="message-item">
+
+                  <img src="https://i.pravatar.cc/150?img=30" class="msg-avatar">
+
+                  <div class="msg-content">
+
+                    <div class="msg-top">
+                      <span class="msg-name">محمد علي</span>
+                      <hr>
+                      <span class="msg-time text-black">قبل 20 دقيقة</span>
+                    </div>
+
+                    <p class="msg-text">هل يوجد توصيل للطلبات؟</p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="message-item">
+
+                  <img src="https://i.pravatar.cc/150?img=35" class="msg-avatar">
+
+                  <div class="msg-content">
+
+                    <div class="msg-top">
+                      <span class="msg-name">عمر خالد</span>
+                      <hr>
+                      <span class="msg-time text-black">قبل ساعة</span>
+                    </div>
+
+                    <p class="msg-text">أحتاج تفاصيل سماعة Sony</p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="message-item">
+
+                  <img src="https://i.pravatar.cc/150?img=45" class="msg-avatar">
+
+                  <div class="msg-content">
+
+                    <div class="msg-top">
+                      <span class="msg-name">يوسف أحمد</span>
+                      <hr>
+                      <span class="msg-time text-black">اليوم</span>
+                    </div>
+
+                    <p class="msg-text">هل يوجد خصم على المنتج؟</p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="message-item">
+
+                  <img src="https://i.pravatar.cc/150?img=50" class="msg-avatar">
+
+                  <div class="msg-content">
+
+                    <div class="msg-top">
+                      <span class="msg-name">محمود صالح</span>
+                      <hr>
+                      <span class="msg-time text-black">اليوم</span>
+                    </div>
+
+                    <p class="msg-text">أرغب بشراء المنتج</p>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+
+
+            <a href="" class="position-relative bell" data-bs-toggle="tooltip" title="التعليقات"><i
+                class="fa-regular fa-bell"></i></a>
+            <a href="" class="position-relative heart" data-bs-toggle="tooltip" title="المفضلة"><i
+                class="fa-regular fa-heart"></i></a>
+          </div>
+
+          <div class="avatar">
+            <img width="70%" src="assets/images/avatar.jpg" alt="">
+          </div>
+
+          <a href="#users-online" data-bs-toggle="offcanvas"><i class="fa-solid fa-bars-staggered active-users"></i></a>
+
+        </div>
+      </header>
+    </nav>
+
+
+    <div class="sidebar" id="sidebar">
+      <div class="profile">
+        <img width="60%" src="assets/images/download (1).png" alt="">
+        <h3> {HSH Showcase} </h3>
+      </div>
+      <hr class="text-white">
+
+      <ul class="ul-sidebar">
+
+        <li class="mb-2 active">
+          <i class="fa-solid fa-gauge-high fs-5"></i>
+          <a href="index.html" class="m-r-10">لوحة التحكم</a>
+        </li>
+        <hr class="text-white">
+
+        <li class="mb-2">
+          <i class="fa-solid fa-headphones fs-5"></i>
+          <a href="product.html" class="m-r-10">المنتجات</a>
+        </li>
+        <hr class="text-white">
+
+
+        <li class="mb-2">
+          <i class="fa-solid fa-headphones fs-5"></i>
+          <a href="blog.html" class="m-r-10">المدونة</a>
+        </li>
+        <hr class="text-white">
+
+
+        <li class="mb-2">
+          <i class="fa-solid fa-circle-plus fs-5"></i>
+          <a href="" class="m-r-10">إضافة منتجات</a>
+        </li>
+        <hr class="text-white">
+
+        <li class="mb-2">
+          <i class="fa-solid fa-layer-group fs-5"></i>
+          <a href="" class="m-r-10">التصنيفات</a>
+        </li>
+        <hr class="text-white">
+
+        <li class="mb-2">
+          <i class="fa-solid fa-users fs-5"></i>
+          <a href="">المستخدمين</a>
+        </li>
+        <hr class="text-white">
+
+        <li class="mb-2">
+          <i class="fa-solid fa-right-from-bracket fs-5"></i>
+          <a href="">تسجيل خروج</a>
+        </li>
+        <hr class="text-white">
+
+      </ul>
+    </div>
+
+  </div>
+  <div class="content p-3" id="content">
+    <div class="inner-content">
+      <div class="container-fluid">
+        <h4 class="text-white p-2">المنتجات </h4>
+        <div class="row">
+          <div class="col">
+            <div class="card p-3">
+              <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#add-product">
+                اضافة منتج جديد
+              </button>
+              <div class="mb-3 d-flex justify-content-end">
+                <input type="text" id="productSearch" class="form-control" placeholder="🔍 ابحث عن منتج...">
+              </div>
+
+              <p id="noResults" class="text-center text-danger mt-3" style="display:none;">
+                ❌ لا يوجد نتائج مطابقة
+              </p>
+
+<div class="product-filters">
+  <button class="filter-btn active" data-filter="all">الكل</button>
+  <button class="filter-btn" data-filter="available">المتوفر</button>
+  <button class="filter-btn" data-filter="unavailable">غير متوفر</button>
+</div>
+
+
+           
+            </div>
+          </div>
+
+          <div class="table-responsive">
+<table id="productsTable" class="table table-hover text-center">
+ <thead>
+<tr>
+  <th>#</th>
+  <th>اسم المنتج</th>
+  <th class="hide-mobile">الصورة</th>
+  <th class="hide-mobile">السعر</th>
+  <th class="hide-mobile">الحالة</th>
+  <th class="hide-mobile">العمليات</th>
+  <th class="show-mobile">تفاصيل</th>
+</tr>
+</thead>
+
+<tbody>
+
+<!-- 1 -->
+
+
+
+
+<tr data-status="unavailable">
+  <td>1</td>
+  <td> Wireless</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/1.jpg" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$65</span>
+</td>
+
+  <td class="hide-mobile">
+   <span class="status unavailable">
+  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 2 -->
+<tr data-status="unavailable">
+  <td>2</td>
+  <td>Sony WH-CH520 Wireless</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/2.webp" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$88</span>
+</td>
+
+  <td class="hide-mobile">
+   <span class="status unavailable">
+  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 3 -->
+<tr data-status="available">
+  <td>3</td>
+  <td>Apple AirPods (3rd Generation)</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/3.jpg" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$66</span>
+</td>
+
+  <td class="hide-mobile">
+    <span class="status available">
+  <i class="fa-solid fa-circle-check"></i> متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 4 -->
+<tr data-status="available">
+  <td>4</td>
+  <td>Anker Soundcore Life P3</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/4.jpg" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$50</span>
+</td>
+
+  <td class="hide-mobile">
+     <span class="status available">
+  <i class="fa-solid fa-circle-check"></i> متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 5 -->
+<tr data-status="unavailable">
+  <td>5</td>
+  <td>Razer BlackShark V2 X</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/5.webp" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$55</span>
+</td>
+
+  <td class="hide-mobile">
+     <span class="status unavailable">
+  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 6 -->
+<tr data-status="unavailable">
+  <td>6</td>
+  <td>Sony WH-1000XM4</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/6.jpg" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$70</span>
+</td>
+
+  <td class="hide-mobile">
+     <span class="status unavailable">
+  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 7 -->
+<tr data-status="available">
+  <td>7</td>
+  <td>JBL Tune 760NC</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/7.jpg" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$70</span>
+</td>
+
+  <td class="hide-mobile">
+     <span class="status available">
+  <i class="fa-solid fa-circle-check"></i> متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 8 -->
+<tr data-status="unavailable">
+  <td>8</td>
+  <td>Beats Solo3 Wireless</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/8.png" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$90</span>
+</td>
+
+  <td class="hide-mobile">
+      <span class="status unavailable">
+  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 9 -->
+<tr data-status="unavailable">
+  <td>9</td>
+  <td>Bose QuietComfort 45</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/9.jpg" width="50">
+  </td>
+
+ <td class="hide-mobile">
+  <span class="price-tag">$95</span>
+</td>
+
+  <td class="hide-mobile">
+      <span class="status unavailable">
+  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+<!-- 10 -->
+<tr data-status="available">
+  <td>10</td>
+  <td>Xiaomi Redmi Buds 4 Lite</td>
+
+  <td class="hide-mobile">
+    <img src="assets/images/products/10.jpg" width="50">
+  </td>
+
+  <td class="hide-mobile">
+  <span class="price-tag">$45</span>
+</td>
+
+  <td class="hide-mobile">
+    <span class="status available">
+  <i class="fa-solid fa-circle-check"></i> متوفر
+</span>
+  </td>
+
+  <td class="hide-mobile">
+<div class="actions">
+  <button class="btn-action edit"
+          onclick="editProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#edit-product">
+    <i class="fa-solid fa-pen"></i>
+  </button>
+
+  <button class="btn-action delete"
+          onclick="deleteProduct(this)"
+          data-bs-toggle="modal"
+          data-bs-target="#delete-product">
+    <i class="fa-solid fa-trash"></i>
+  </button>
+</div>
+
+  <td class="show-mobile">
+    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+      عرض
+    </button>
+  </td>
+</tr>
+
+</tbody>
+  </table>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!--start add product  -->
+
+    <div class="modal fade modall" id="add-product" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5  text-white" id="exampleModalLabel">اضافة منتج جديد</h1>
+            <button type="button" class=" text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label class="form-label text-white">اسم المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال اسم المنتج">
+
+                </div>
+
+                <div class="mb-3 col">
+                  <label class="form-label  text-white">سعر المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال سعر المنتج">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="mb-3 col">
+                  <label class="form-label  text-white">الحالة :</label>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle w-100 text-white" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      الحالة
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li> <a href="" class="btn btn-success btn-sm w-100">متوفر</a></li>
+                      <li> <a href="" class="btn btn-danger btn-sm w-100">غير متوفر </a></li>
+
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="mb-3 col">
+                  <label class="form-label text-white">رقم المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال رقم المنتج">
+                </div>
+              </div>
+
+              <div>
+                <label class="form-label text-white">التفاصيل :</label>
+                <textarea class="form-control" name="" id=""></textarea>
+              </div>
+
+              <div class="mb-3 p-2">
+                <label for="formFile" class="form-label text-white">تحميل صورة المنتج :</label>
+                <input class="form-control" type="file" name="" id="">
+              </div>
+
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                  ✖ إغلاق
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                  💾 حفظ المنتج
+                </button>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  end add product  -->
+
+
+
+    <!--start edit product  -->
+
+    <div class="modal fade " id="edit-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">تعديل بيانات المنتج </h1>
+            <button type="button" class="text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label class="form-label text-white">اسم المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال اسم المنتج"
+                    value="	AirPods Pro (2nd Gen)">
+
+                </div>
+
+                <div class="mb-3 col">
+                  <label class="form-label text-white">سعر المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال سعر المنتج" value="290$">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="mb-3 col">
+                  <label class="form-label text-white">الحالة :</label>
+                  <div class="dropdown">
+                    <button class=" dropdown-toggle w-100 text-white" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      الحالة
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li> <a href="" class="btn btn-success btn-sm w-100">متوفر</a></li>
+                      <li> <a href="" class="btn btn-danger btn-sm w-100">غير متوفر </a></li>
+
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="mb-3 col">
+                  <label class="form-label text-white">رقم المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال رقم المنتج" value="1">
+                </div>
+              </div>
+
+              <div>
+                <label class="form-label text-white">التفاصيل :</label>
+                <textarea class="form-control" name="" id=""></textarea>
+              </div>
+
+              <div class="mb-3 p-2">
+                <label for="formFile" class="form-label text-white p-1">تحميل صورة المنتج :</label>
+                <input class="form-control" type="file" name="" id="">
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                  ✖ إغلاق
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                  💾 حفظ المنتج
+                </button>
+
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--  end edit product  -->
+
+
+
+    <!--start delete product  -->
+
+    <div class="modal fade" id="delete-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">حذف بيانات المنتج </h1>
+            <button type="button" class="text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+
+
+              <div class="alert alert-danger delete text-white">
+                هل انت متاكد من عملية حذف المنتج ؟
+
+              </div>
+
+
+
+
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+              ✖ إغلاق
+            </button>
+
+            <button type="submit" class="btn btn-primary">
+               حذف المنتج
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--  end delete product  -->
+
+
+    <!-- users online list  -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="users-online" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">المستخدمين المتصلين :</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+
+        <div class="alert alert-success">
+          كافة المستخدمين النشطين
+        </div>
+
+
+        <!-- 1 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+
+            <img width="50" src="assets/images/avatar.jpg" alt="">
+            <h4>محمد الاحمد </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 2 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/av2.jpg" alt="">
+
+            <h4 class="text-black">امير عبارة </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 3 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/avv.jpg" alt="">
+
+            <h4>غيث الدروبي</h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 4 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/av7.jpg" alt="">
+
+            <h4>سمير العمر </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 5 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/av1.jpg" alt="">
+
+            <h4>زيد سباعي </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 6 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/avv4.jpg" alt="">
+
+            <h4>مصطفى محمداه </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 7 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/av8.jpg" alt="">
+
+            <h4>عبود الشامي </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 8 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/avv1.jpg" alt="">
+
+            <h4>فراس نعمة </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 9 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/avv2.jpg" alt="">
+
+            <h4>كنان باريني </h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+        <!-- 10 -->
+        <div class="item-side-menu d-flex mb-3">
+          <div class="avatar-info position-relative">
+            <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img width="50" src="assets/images/users online/avv3.jpg" alt="">
+
+            <h4>علي الهادي</h4>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa-solid fa-message chat-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      let messagescontainer = document.getElementById('messages-container');
+      let messagesarea = document.getElementById('messages-area');
+
+      messagescontainer.addEventListener('click', function () {
+        messagesarea.style.display = messagesarea.style.display === "block" ? "none" : "block";
+
+      });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+
+
+    <script>
+      document.querySelectorAll('.message-item').forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.remove('unread');
+          item.classList.add('read');
+        });
+      });
+    </script>
+
+
+    <script src="assets/js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+    </script>
+
+
+    <script>
+      document.getElementById('productSearch').addEventListener('keyup', function () {
+
+        let searchValue = this.value.toLowerCase().trim();
+        let rows = document.querySelectorAll('#productsTable tbody tr');
+
+        rows.forEach(function (row) {
+
+          let productName = row.cells[1].textContent.toLowerCase();
+
+          if (productName.includes(searchValue)) {
+            row.style.display = "";
+          } else {
+            row.style.display = "none";
+          }
+
+        });
+
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        const buttons = document.querySelectorAll('.filter-btn');
+        const rows = document.querySelectorAll('#productsTable tbody tr');
+
+        buttons.forEach(button => {
+
+          button.addEventListener('click', function () {
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.dataset.filter;
+
+            rows.forEach(row => {
+
+              const status = row.dataset.status;
+
+              if (filter === "all" || filter === status) {
+                row.style.display = "";
+              } else {
+                row.style.display = "none";
+              }
+
+            });
+
+          });
+
+        });
+
+      });
+    </script>
+
+
+
+
+    <script>
+      $(document).ready(function () {
+
+        let table = $('#example').DataTable({
+
+          responsive: true,
+          autoWidth: true,
+          pageLength: 10,
+
+          language: {
+            search: "بحث:",
+            lengthMenu: "عرض _MENU_ منتج",
+            info: "عرض _START_ إلى _END_ من أصل _TOTAL_ منتج",
+            infoEmpty: "لا توجد منتجات",
+            zeroRecords: "لا توجد نتائج مطابقة",
+            paginate: {
+              next: "التالي",
+              previous: "السابق"
+            }
+          }
+
+        });
+
+        let currentCount = table.rows().count();
+        let target = 100;
+
+        while (currentCount < target) {
+
+          let index = currentCount + 1;
+
+          table.row.add([
+            index,
+            '<img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf" width="55" class="rounded">',
+            'Gaming Product ' + index,
+            '$' + (50 + index),
+            '<span class="badge bg-success">متوفر</span>',
+            `
+            <a class="btn btn-sm btn-outline-info">عرض</a>
+            <a class="btn btn-sm btn-outline-warning">تعديل</a>
+            <a class="btn btn-sm btn-outline-danger">حذف</a>
+            `
+          ]);
+
+          currentCount++;
+        }
+
+        table.draw(false);
+
+      });
+    </script>
+
+ <script>
+function toggleDetails(btn) {
+
+  let row = btn.closest("tr");
+  let nextRow = row.nextElementSibling;
+
+  if (nextRow && nextRow.classList.contains("details-row")) {
+    nextRow.remove();
+    return;
+  }
+
+  let image = row.cells[2]?.innerHTML || "";
+ let price = row.cells[3]?.innerHTML || "";
+  let status = row.cells[4]?.innerHTML || "";
+  let actions = row.cells[5]?.innerHTML || "";
+
+  let detailsRow = document.createElement("tr");
+  detailsRow.classList.add("details-row");
+
+  detailsRow.innerHTML = `
+    <td colspan="7">
+      <div class="mobile-details">
+
+        <div class="detail-box">
+          <strong>الصورة:</strong><br>
+          ${image}
+        </div>
+
+        <div class="detail-box">
+          <strong>السعر:</strong><br>
+          ${price}
+        </div>
+
+        <div class="detail-box">
+          <strong>الحالة:</strong><br>
+          ${status}
+        </div>
+
+        <div class="detail-box">
+          <strong>العمليات:</strong><br>
+          ${actions}
+        </div>
+
+      </div>
+    </td>
+  `;
+
+  row.after(detailsRow);
+}
+</script>
+
+
+<script>
+
+let currentRow = null;
+
+// ================== تعديل ==================
+function editProduct(btn) {
+
+  let row = btn.closest("tr");
+  currentRow = row;
+
+  let name = row.cells[1].innerText;
+  let price = row.cells[3].innerText;
+
+  // حط القيم داخل المودال
+  document.querySelector('#edit-product input[type="text"]').value = name;
+  document.querySelectorAll('#edit-product input[type="text"]')[1].value = price;
+}
+
+
+// ================== حفظ التعديل ==================
+document.querySelector('#edit-product form').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  let inputs = this.querySelectorAll('input[type="text"]');
+
+  let newName = inputs[0].value;
+  let newPrice = inputs[1].value;
+
+  currentRow.cells[1].innerText = newName;
+  currentRow.cells[3].innerText = newPrice;
+
+  // إغلاق المودال
+  bootstrap.Modal.getInstance(document.getElementById('edit-product')).hide();
+});
+
+
+// ================== حذف ==================
+function deleteProduct(btn) {
+  currentRow = btn.closest("tr");
+}
+
+
+// ================== تأكيد الحذف ==================
+document.querySelector('#delete-product .btn-primary').addEventListener('click', function(){
+
+  if(currentRow){
+    currentRow.remove();
+  }
+
+  bootstrap.Modal.getInstance(document.getElementById('delete-product')).hide();
+});
+
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+
+</body>
+
+</html>

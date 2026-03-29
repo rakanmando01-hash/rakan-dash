@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        window.onload = function () {
+            document.getElementById("loader").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="" id="loader" style="width: 100%;">
+        <img src="assets/images/loader.gif" width="50" alt="">
+    </div>
+
+
+    <div class="main-wrapper">
+        <nav class="fixed-top">
+            <header class="header d-flex justify-content-between py-1">
+                <div class="right-header d-flex align-items-center gap-3">
+                    <div class="logo d-none d-md-block ">
+                        <a href="/">ادارة متجر سماعات </a>
+                    </div>
+                    <div class="px-3">
+
+                    </div>
+                    <a href="#"><i class="fa-solid fa-chart-bar" id="sidebar-toggle"></i> </a>
+                    <form action="" class="d-none d-md-block">
+                        <input type="search" class="form-control form-control-sm" placeholder="🔍 ابحث عن منتج">
+
+                    </form>
+                </div>
+
+                <div class="left-header d-flex align-items-center gap-3 px-3">
+                    <div class="icons d-flex gap-3">
+                        <a href="#" class="position-relative bell" data-bs-toggle="tooltip" title="الإشعارات">
+                            <i class="fa-regular fa-bell"></i>
+                        </a>
+
+
+                        <div class="messages-container position-relative" id="messages-container">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <div class="messages-area" id="messages-area">
+
+                                <div class="messages-header">
+                                    <h4>أحدث الرسائل</h4>
+                                </div>
+
+
+                                <div class="message-item unread">
+
+                                    <img src="https://i.pravatar.cc/150?img=12" class="msg-avatar">
+
+                                    <div class="msg-content">
+
+                                        <div class="msg-top">
+                                            <span class="msg-name">محمد محمود</span>
+                                            <hr class="text-black">
+                                            <span class="msg-time text-black">الآن</span>
+                                        </div>
+
+                                        <p class="msg-text">هل يوجد سماعة JBL Tune 510BT</p>
+
+                                    </div>
+
+                                    <span class="msg-badge">جديد</span>
+
+                                </div>
+
+
+                                <div class="message-item unread">
+
+                                    <img src="https://i.pravatar.cc/150?img=15" class="msg-avatar">
+
+                                    <div class="msg-content">
+
+                                        <div class="msg-top">
+                                            <span class="msg-name">زياد رجب</span>
+                                            <hr>
+                                            <span class="msg-time text-black">قبل 3 دقائق</span>
+                                        </div>
+
+                                        <p class="msg-text">هل المنتج Galaxy Buds2 متوفر؟</p>
+
+                                    </div>
+
+                                    <span class="msg-badge">جديد</span>
+
+                                </div>
+
+
+                                <div class="message-item">
+
+                                    <img src="https://i.pravatar.cc/150?img=22" class="msg-avatar">
+
+                                    <div class="msg-content">
+
+                                        <div class="msg-top">
+                                            <span class="msg-name">أحمد مندو</span>
+                                            <hr>
+                                            <span class="msg-time text-black">قبل 10 دقائق</span>
+                                        </div>
+
+                                        <p class="msg-text">أرغب بمعرفة سعر المنتج</p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="message-item">
+
+                                    <img src="https://i.pravatar.cc/150?img=30" class="msg-avatar">
+
+                                    <div class="msg-content">
+
+                                        <div class="msg-top">
+                                            <span class="msg-name">محمد علي</span>
+                                            <hr>
+                                            <span class="msg-time text-black">قبل 20 دقيقة</span>
+                                        </div>
+
+                                        <p class="msg-text">هل يوجد توصيل للطلبات؟</p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="message-item">
+
+                                    <img src="https://i.pravatar.cc/150?img=35" class="msg-avatar">
+
+                                    <div class="msg-content">
+
+                                        <div class="msg-top">
+                                            <span class="msg-name">عمر خالد</span>
+                                            <hr>
+                                            <span class="msg-time text-black">قبل ساعة</span>
+                                        </div>
+
+                                        <p class="msg-text">أحتاج تفاصيل سماعة Sony</p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="message-item">
+
+                                    <img src="https://i.pravatar.cc/150?img=45" class="msg-avatar">
+
+                                    <div class="msg-content">
+
+                                        <div class="msg-top">
+                                            <span class="msg-name">يوسف أحمد</span>
+                                            <hr>
+                                            <span class="msg-time text-black">اليوم</span>
+                                        </div>
+
+                                        <p class="msg-text">هل يوجد خصم على المنتج؟</p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="message-item">
+
+                                    <img src="https://i.pravatar.cc/150?img=50" class="msg-avatar">
+
+                                    <div class="msg-content">
+
+                                        <div class="msg-top">
+                                            <span class="msg-name">محمود صالح</span>
+                                            <hr>
+                                            <span class="msg-time text-black">اليوم</span>
+                                        </div>
+
+                                        <p class="msg-text">أرغب بشراء المنتج</p>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <a href="" class="position-relative bell" data-bs-toggle="tooltip" title="التعليقات"><i
+                                class="fa-regular fa-bell"></i></a>
+                        <a href="" class="position-relative heart" data-bs-toggle="tooltip" title="المفضلة"><i
+                                class="fa-regular fa-heart"></i></a>
+                    </div>
+
+                    <div class="avatar">
+                        <img width="70%" src="assets/images/avatar.jpg" alt="">
+                    </div>
+
+                    <a href="#users-online" data-bs-toggle="offcanvas"><i
+                            class="fa-solid fa-bars-staggered active-users"></i></a>
+
+                </div>
+            </header>
+        </nav>
+
+
+        <div class="sidebar" id="sidebar">
+            <div class="profile">
+                <img width="60%" src="assets/images/download (1).png" alt="">
+                <h3> {HSH Showcase} </h3>
+            </div>
+            <hr class="text-white">
+
+            <ul class="ul-sidebar">
+
+                <li class="mb-2 active">
+                    <i class="fa-solid fa-gauge-high fs-5"></i>
+                    <a href="/index.html" class="m-r-10">لوحة التحكم</a>
+                </li>
+                <hr class="text-white">
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-headphones fs-5"></i>
+                    <a href="/product.html" class="m-r-10">المنتجات</a>
+                </li>
+                <hr class="text-white">
+
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-headphones fs-5"></i>
+                    <a href="/blog.html" class="m-r-10">المدونة</a>
+                </li>
+                <hr class="text-white">
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-circle-plus fs-5"></i>
+                    <a href="" class="m-r-10">إضافة منتجات</a>
+                </li>
+                <hr class="text-white">
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-layer-group fs-5"></i>
+                    <a href="" class="m-r-10">التصنيفات</a>
+                </li>
+                <hr class="text-white">
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-users fs-5"></i>
+                    <a href="">المستخدمين</a>
+                </li>
+                <hr class="text-white">
+
+                <li class="mb-2">
+                    <i class="fa-solid fa-right-from-bracket fs-5"></i>
+                    <a href="">تسجيل خروج</a>
+                </li>
+                <hr class="text-white">
+
+            </ul>
+        </div>
+
+
+        <div class="content p-3" id="content">
+            <div class="inner-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="text-white mb-4 fw-bold">📰 المدونة</h3>
+
+                            <div class="blog-wrapper">
+
+                                <!-- زر إضافة -->
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <a href="add-blogs.html" class="btn btn-primary">
+                                        إضافة مقال جديد
+                                    </a>
+                                    <span class="text-white">عدد المقالات: 3</span>
+                                </div>
+
+
+
+
+                                <div class="row g-4">
+
+                                    <!-- مقال 1 -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="blog-card">
+                                            <img src="assets/images/blog 11.jpg" class="img-fluid" alt="">
+                                            <div class="blog-content">
+
+                                                <div class="blog-meta">
+                                                    <span class="blog-category">مقال مميز</span>
+                                                    <div class="blog-info">
+                                                        <span><i class="fa-regular fa-eye"></i> 1,560</span>
+                                                        <span><i class="fa-regular fa-calendar"></i> 17 مارس 2026</span>
+                                                    </div>
+                                                </div>
+
+                                                <h4>كيف تختار السماعة المناسبة لك؟</h4>
+                                                <p>
+                                                    إذا كنت تستخدم السماعات للعمل أو الجيمينغ أو الاستماع اليومي،
+                                                    فاختيار النوع الصحيح يحدث فرقاً كبيراً في جودة التجربة.
+                                                    تعرف في هذا الدليل على الفرق بين العزل النشط ANC والعزل التقليدي،
+                                                    وأهم المواصفات التي يجب الانتباه لها قبل الشراء. </p>
+
+                                                <div class="blog-actions">
+                                                    <a href="#" class="btn btn-primary">قراءة المقال الكامل</a>
+
+                                                    <a href="#" class="btn btn-sm btn-outline-light"
+                                                        data-bs-toggle="modal" data-bs-target="#edit-product">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </a>
+
+                                                    <a href="#" class="btn btn-sm btn-outline-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#delete-product">
+                                                        <i class="fa-regular fa-trash-can"></i>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- مقال 2 -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="blog-card">
+                                            <img src="assets/images/blog 12.jpg" class="img-fluid" alt="">
+                                            <div class="blog-content">
+
+                                                <div class="blog-meta">
+                                                    <span class="blog-category">مقال تقني</span>
+                                                    <div class="blog-info">
+                                                        <span><i class="fa-regular fa-eye"></i> 1,240</span>
+                                                        <span><i class="fa-regular fa-calendar"></i> 9 ابريل 2025</span>
+                                                    </div>
+                                                </div>
+
+                                                <h4>أفضل سماعات للألعاب بجودة صوت محيطية</h4>
+                                                <p>
+                                                    سماعات الجيمينغ تحتاج دقة صوت عالية وراحة طويلة أثناء الاستخدام.
+                                                    استعرضنا في هذا المقال أفضل الخيارات المتوفرة حالياً مع مقارنة بين
+                                                    الأداء والسعر وتجربة المستخدم. </p>
+
+                                                <div class="blog-actions">
+                                                    <a href="#" class="btn btn-primary">قراءة المقال الكامل</a>
+
+                                                    <a href="#" class="btn btn-sm btn-outline-light"
+                                                        data-bs-toggle="modal" data-bs-target="#edit-product">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </a>
+
+                                                    <a href="#" class="btn btn-sm btn-outline-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#delete-product">
+                                                        <i class="fa-regular fa-trash-can"></i>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- مقال 3 -->
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="blog-card">
+                                            <img src="assets/images/blog 13.jpg" class="img-fluid" alt="">
+                                            <div class="blog-content">
+
+                                                <div class="blog-meta">
+                                                    <span class="blog-category">مقال راي</span>
+                                                    <div class="blog-info">
+                                                        <span><i class="fa-regular fa-eye"></i> 2,390</span>
+                                                        <span><i class="fa-regular fa-calendar"></i> 23 ديسمبر
+                                                            2024</span>
+                                                    </div>
+                                                </div>
+
+                                                <h4>هل تستحق السماعات اللاسلكية السعر الأعلى؟؟</h4>
+                                                <p>
+                                                    مع انتشار البلوتوث وتقنيات البطارية الحديثة، أصبحت السماعات
+                                                    اللاسلكية خياراً شائعاً.
+                                                    نناقش في هذا المقال مزاياها وعيوبها وهل الفرق بالسعر مبرر فعلاً.
+                                                </p>
+
+                                                <div class="blog-actions">
+                                                    <a href="#" class="btn btn-primary">قراءة المقال الكامل</a>
+
+                                                    <a href="#" class="btn btn-sm btn-outline-light"
+                                                        data-bs-toggle="modal" data-bs-target="#edit-product">
+                                                        <i class="fa-regular fa-pen-to-square"></i>
+                                                    </a>
+
+                                                    <a href="#" class="btn btn-sm btn-outline-danger"
+                                                        data-bs-toggle="modal" data-bs-target="#delete-product">
+                                                        <i class="fa-regular fa-trash-can"></i>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!--start delete product  -->
+                    <!-- users online -->
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="users-online"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">المستخدمين المتصلين :</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+
+                            <div class="alert alert-success">
+                                كافة المستخدمين النشطين
+                            </div>
+
+
+                            <!-- 1 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+
+                                    <img width="50" src="assets/images/avatar.jpg" alt="">
+                                    <h4>محمد الاحمد </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 2 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av2.jpg" alt="">
+
+                                    <h4 class="text-black">امير عبارة </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 3 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv.jpg" alt="">
+
+                                    <h4>غيث الدروبي</h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 4 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av7.jpg" alt="">
+
+                                    <h4>سمير العمر </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 5 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av1.jpg" alt="">
+
+                                    <h4>زيد سباعي </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 6 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv4.jpg" alt="">
+
+                                    <h4>مصطفى محمداه </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 7 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av8.jpg" alt="">
+
+                                    <h4>عبود الشامي </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 8 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv1.jpg" alt="">
+
+                                    <h4>فراس نعمة </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 9 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv2.jpg" alt="">
+
+                                    <h4>كنان باريني </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 10 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv3.jpg" alt="">
+
+                                    <h4>علي الهادي</h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--  end delete product  -->
+
+                    <!-- users online list  -->
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="users-online"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">المستخدمين المتصلين :</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+
+
+                            <div class="alert alert-success">
+                                كافة المستخدمين النشطين
+                            </div>
+
+
+                            <!-- 1 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+
+                                    <img width="50" src="assets/images/avatar.jpg" alt="">
+                                    <h4>محمد الاحمد </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 2 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av2.jpg" alt="">
+
+                                    <h4 class="text-black">امير عبارة </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 3 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv.jpg" alt="">
+
+                                    <h4>عبد الحميد الدروبي </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 4 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av7.jpg" alt="">
+
+                                    <h4>سمير العمر </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 5 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av1.jpg" alt="">
+
+                                    <h4>زيد سباعي </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 6 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv4.jpg" alt="">
+
+                                    <h4>عبد الحكيم محمداه </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 7 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/av8.jpg" alt="">
+
+                                    <h4>عبود الشامي </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 8 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv1.jpg" alt="">
+
+                                    <h4>فراس نعمة </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 9 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv2.jpg" alt="">
+
+                                    <h4>كنان باريني </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+                            <!-- 10 -->
+                            <div class="item-side-menu d-flex mb-3">
+                                <div class="avatar-info position-relative">
+                                    <div style="width: 10px; height: 10px;" class="spinner-grow text-success grow-user"
+                                        role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <img width="50" src="assets/images/users online/avv3.jpg" alt="">
+
+                                    <h4>علي عبد الهادي </h4>
+                                </div>
+
+                                <div class="contact-info">
+                                    <i class="fa-solid fa-message chat-icon"></i>
+                                    <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+                                    <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!--start delete product  -->
+
+                    <div class="modal fade" id="delete-product" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">حذف بيانات المنتج
+                                    </h1>
+                                    <button type="button" class="text-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form>
+
+
+                                        <div class="alert alert-danger delete text-white"> ⚠️ هل أنت متأكد من حذف هذا
+                                            المقال؟ </div>
+
+
+
+
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                        ✖ إغلاق
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger">
+                                        🗑️ تأكيد الحذف
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  end delete product  -->
+
+
+    <!--start edit product  -->
+
+    <div class="modal fade " id="edit-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">تعديل المقال </h1>
+            <button type="button" class="text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label class="form-label text-white">اسم المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال اسم المنتج"
+                    value="	AirPods Pro (2nd Gen)">
+
+                </div>
+
+                <div class="mb-3 col">
+                  <label class="form-label text-white">سعر المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال سعر المنتج" value="290$">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="mb-3 col">
+                  <label class="form-label text-white">الحالة :</label>
+                  <div class="dropdown">
+                    <button class=" dropdown-toggle w-100 text-white" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      الحالة
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li> <a href="" class="btn btn-success btn-sm w-100">متوفر</a></li>
+                      <li> <a href="" class="btn btn-danger btn-sm w-100">غير متوفر </a></li>
+
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="mb-3 col">
+                  <label class="form-label text-white">رقم المنتج :</label>
+                  <input type="text" class="form-control" placeholder="الرجاء ادخال رقم المنتج" value="1">
+                </div>
+              </div>
+
+              <div>
+                <label class="form-label text-white">التفاصيل :</label>
+                <textarea class="form-control" name="" id=""></textarea>
+              </div>
+
+              <div class="mb-3 p-2">
+                <label for="formFile" class="form-label text-white p-1">تحميل صورة المنتج :</label>
+                <input class="form-control" type="file" name="" id="">
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                  ✖ إغلاق
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                  💾 حفظ المقال
+                </button>
+
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--  end edit product  -->
+
+
+
+                    <script>
+                        let messagescontainer = document.getElementById('messages-container');
+                        let messagesarea = document.getElementById('messages-area');
+
+                        messagescontainer.addEventListener('click', function () {
+                            messagesarea.style.display = messagesarea.style.display === "block" ? "none" : "block";
+
+                        });
+                    </script>
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                    <script src="assets/js/charts.js"></script>
+                    <script src="assets/js/bootstrap.js"></script>
+                    <script>
+                        const offcanvas = document.getElementById('users-online');
+
+                        offcanvas.addEventListener('shown.bs.offcanvas', () => {
+                            // أظهر السكيلتون
+                            document.getElementById('users-skeleton').style.display = 'block';
+
+                            // بعد ثانية
+                            setTimeout(() => {
+                                document.getElementById('users-skeleton').style.display = 'none';
+
+                                document.querySelectorAll('.item-side-menu').forEach(item => {
+                                    item.style.display = 'flex';
+                                });
+                            }, 1200);
+                        });
+                    </script>
+
+
+                    <script>
+                        document.querySelectorAll('.message-item').forEach(item => {
+                            item.addEventListener('click', () => {
+                                item.classList.remove('unread');
+                                item.classList.add('read');
+                            });
+                        });
+                    </script>
+
+
+                    <script src="assets/js/script.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            var tooltipTriggerList = [].slice.call(
+                                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                            );
+                            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                                return new bootstrap.Tooltip(tooltipTriggerEl);
+                            });
+                        });
+                    </script>
+
+</body>
+
+</html>
