@@ -129,7 +129,7 @@
                   <div class="msg-content">
 
                     <div class="msg-top">
-                      <span class="msg-name">محمد علي</span>
+                      <span class="msg-name">سارة علي</span>
                       <hr>
                       <span class="msg-time text-black">قبل 20 دقيقة</span>
                     </div>
@@ -205,8 +205,9 @@
 
 
 
-            <a href="" class="position-relative bell" data-bs-toggle="tooltip" title="التعليقات"><i
-                class="fa-regular fa-bell"></i></a>
+            <a href="" class="position-relative bell" data-bs-toggle="tooltip" title="التعليقات">
+              <i class="fa-regular fa-comment-dots"></i>
+            </a>
             <a href="" class="position-relative heart" data-bs-toggle="tooltip" title="المفضلة"><i
                 class="fa-regular fa-heart"></i></a>
           </div>
@@ -297,470 +298,430 @@
                 ❌ لا يوجد نتائج مطابقة
               </p>
 
-<div class="product-filters">
-  <button class="filter-btn active" data-filter="all">الكل</button>
-  <button class="filter-btn" data-filter="available">المتوفر</button>
-  <button class="filter-btn" data-filter="unavailable">غير متوفر</button>
-</div>
+              <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="available">المتوفر</button>
+                <button class="filter-btn" data-filter="unavailable">غير متوفر</button>
+              </div>
 
 
-           
+
             </div>
           </div>
 
           <div class="table-responsive">
-<table id="productsTable" class="table table-hover text-center">
- <thead>
-<tr>
-  <th>#</th>
-  <th>اسم المنتج</th>
-  <th class="hide-mobile">الصورة</th>
-  <th class="hide-mobile">السعر</th>
-  <th class="hide-mobile">الحالة</th>
-  <th class="hide-mobile">العمليات</th>
-  <th class="show-mobile">تفاصيل</th>
-</tr>
-</thead>
-
-<tbody>
-
-<!-- 1 -->
-
-
-
-
-<tr data-status="unavailable">
-  <td>1</td>
-  <td> Wireless</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/1.jpg" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$65</span>
-</td>
-
-  <td class="hide-mobile">
-   <span class="status unavailable">
-  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 2 -->
-<tr data-status="unavailable">
-  <td>2</td>
-  <td>Sony WH-CH520 Wireless</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/2.webp" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$88</span>
-</td>
-
-  <td class="hide-mobile">
-   <span class="status unavailable">
-  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 3 -->
-<tr data-status="available">
-  <td>3</td>
-  <td>Apple AirPods (3rd Generation)</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/3.jpg" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$66</span>
-</td>
-
-  <td class="hide-mobile">
-    <span class="status available">
-  <i class="fa-solid fa-circle-check"></i> متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 4 -->
-<tr data-status="available">
-  <td>4</td>
-  <td>Anker Soundcore Life P3</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/4.jpg" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$50</span>
-</td>
-
-  <td class="hide-mobile">
-     <span class="status available">
-  <i class="fa-solid fa-circle-check"></i> متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 5 -->
-<tr data-status="unavailable">
-  <td>5</td>
-  <td>Razer BlackShark V2 X</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/5.webp" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$55</span>
-</td>
-
-  <td class="hide-mobile">
-     <span class="status unavailable">
-  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 6 -->
-<tr data-status="unavailable">
-  <td>6</td>
-  <td>Sony WH-1000XM4</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/6.jpg" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$70</span>
-</td>
-
-  <td class="hide-mobile">
-     <span class="status unavailable">
-  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 7 -->
-<tr data-status="available">
-  <td>7</td>
-  <td>JBL Tune 760NC</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/7.jpg" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$70</span>
-</td>
-
-  <td class="hide-mobile">
-     <span class="status available">
-  <i class="fa-solid fa-circle-check"></i> متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 8 -->
-<tr data-status="unavailable">
-  <td>8</td>
-  <td>Beats Solo3 Wireless</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/8.png" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$90</span>
-</td>
-
-  <td class="hide-mobile">
-      <span class="status unavailable">
-  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 9 -->
-<tr data-status="unavailable">
-  <td>9</td>
-  <td>Bose QuietComfort 45</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/9.jpg" width="50">
-  </td>
-
- <td class="hide-mobile">
-  <span class="price-tag">$95</span>
-</td>
-
-  <td class="hide-mobile">
-      <span class="status unavailable">
-  <i class="fa-solid fa-circle-xmark"></i> غير متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-<!-- 10 -->
-<tr data-status="available">
-  <td>10</td>
-  <td>Xiaomi Redmi Buds 4 Lite</td>
-
-  <td class="hide-mobile">
-    <img src="assets/images/products/10.jpg" width="50">
-  </td>
-
-  <td class="hide-mobile">
-  <span class="price-tag">$45</span>
-</td>
-
-  <td class="hide-mobile">
-    <span class="status available">
-  <i class="fa-solid fa-circle-check"></i> متوفر
-</span>
-  </td>
-
-  <td class="hide-mobile">
-<div class="actions">
-  <button class="btn-action edit"
-          onclick="editProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#edit-product">
-    <i class="fa-solid fa-pen"></i>
-  </button>
-
-  <button class="btn-action delete"
-          onclick="deleteProduct(this)"
-          data-bs-toggle="modal"
-          data-bs-target="#delete-product">
-    <i class="fa-solid fa-trash"></i>
-  </button>
-</div>
-
-  <td class="show-mobile">
-    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
-      عرض
-    </button>
-  </td>
-</tr>
-
-</tbody>
-  </table>
-</div>
+            <table id="productsTable" class="table table-hover text-center">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>اسم المنتج</th>
+                  <th class="hide-mobile">الصورة</th>
+                  <th class="hide-mobile">السعر</th>
+                  <th class="hide-mobile">الحالة</th>
+                  <th class="hide-mobile">العمليات</th>
+                  <th class="show-mobile">تفاصيل</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <!-- 1 -->
+
+
+
+
+                <tr data-status="unavailable">
+                  <td>1</td>
+                  <td> Wireless</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/1.jpg" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$65</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status unavailable">
+                      <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 2 -->
+                <tr data-status="unavailable">
+                  <td>2</td>
+                  <td>Sony WH-CH520 Wireless</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/2.webp" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$88</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status unavailable">
+                      <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 3 -->
+                <tr data-status="available">
+                  <td>3</td>
+                  <td>Apple AirPods (3rd Generation)</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/3.jpg" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$66</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status available">
+                      <i class="fa-solid fa-circle-check"></i> متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 4 -->
+                <tr data-status="available">
+                  <td>4</td>
+                  <td>Anker Soundcore Life P3</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/4.jpg" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$50</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status available">
+                      <i class="fa-solid fa-circle-check"></i> متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 5 -->
+                <tr data-status="unavailable">
+                  <td>5</td>
+                  <td>Razer BlackShark V2 X</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/5.webp" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$55</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status unavailable">
+                      <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 6 -->
+                <tr data-status="unavailable">
+                  <td>6</td>
+                  <td>Sony WH-1000XM4</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/6.jpg" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$70</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status unavailable">
+                      <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 7 -->
+                <tr data-status="available">
+                  <td>7</td>
+                  <td>JBL Tune 760NC</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/7.jpg" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$70</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status available">
+                      <i class="fa-solid fa-circle-check"></i> متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 8 -->
+                <tr data-status="unavailable">
+                  <td>8</td>
+                  <td>Beats Solo3 Wireless</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/8.png" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$90</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status unavailable">
+                      <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 9 -->
+                <tr data-status="unavailable">
+                  <td>9</td>
+                  <td>Bose QuietComfort 45</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/9.jpg" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$95</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status unavailable">
+                      <i class="fa-solid fa-circle-xmark"></i> غير متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+                <!-- 10 -->
+                <tr data-status="available">
+                  <td>10</td>
+                  <td>Xiaomi Redmi Buds 4 Lite</td>
+
+                  <td class="hide-mobile">
+                    <img src="assets/images/products/10.jpg" width="50">
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="price-tag">$45</span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <span class="status available">
+                      <i class="fa-solid fa-circle-check"></i> متوفر
+                    </span>
+                  </td>
+
+                  <td class="hide-mobile">
+                    <div class="actions">
+                      <button class="btn-action edit" onclick="editProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#edit-product">
+                        <i class="fa-solid fa-pen"></i>
+                      </button>
+
+                      <button class="btn-action delete" onclick="deleteProduct(this)" data-bs-toggle="modal"
+                        data-bs-target="#delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                  <td class="show-mobile">
+                    <button class="btn btn-info btn-sm text-white" onclick="toggleDetails(this)">
+                      عرض
+                    </button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
 
 
         </div>
@@ -966,7 +927,7 @@
             </button>
 
             <button type="submit" class="btn btn-primary">
-               حذف المنتج
+              حذف المنتج
             </button>
 
           </div>
@@ -1326,26 +1287,26 @@
       });
     </script>
 
- <script>
-function toggleDetails(btn) {
+    <script>
+      function toggleDetails(btn) {
 
-  let row = btn.closest("tr");
-  let nextRow = row.nextElementSibling;
+        let row = btn.closest("tr");
+        let nextRow = row.nextElementSibling;
 
-  if (nextRow && nextRow.classList.contains("details-row")) {
-    nextRow.remove();
-    return;
-  }
+        if (nextRow && nextRow.classList.contains("details-row")) {
+          nextRow.remove();
+          return;
+        }
 
-  let image = row.cells[2]?.innerHTML || "";
- let price = row.cells[3]?.innerHTML || "";
-  let status = row.cells[4]?.innerHTML || "";
-  let actions = row.cells[5]?.innerHTML || "";
+        let image = row.cells[2]?.innerHTML || "";
+        let price = row.cells[3]?.innerHTML || "";
+        let status = row.cells[4]?.innerHTML || "";
+        let actions = row.cells[5]?.innerHTML || "";
 
-  let detailsRow = document.createElement("tr");
-  detailsRow.classList.add("details-row");
+        let detailsRow = document.createElement("tr");
+        detailsRow.classList.add("details-row");
 
-  detailsRow.innerHTML = `
+        detailsRow.innerHTML = `
     <td colspan="7">
       <div class="mobile-details">
 
@@ -1373,64 +1334,64 @@ function toggleDetails(btn) {
     </td>
   `;
 
-  row.after(detailsRow);
-}
-</script>
+        row.after(detailsRow);
+      }
+    </script>
 
 
-<script>
+    <script>
 
-let currentRow = null;
+      let currentRow = null;
 
-// ================== تعديل ==================
-function editProduct(btn) {
+      // ================== تعديل ==================
+      function editProduct(btn) {
 
-  let row = btn.closest("tr");
-  currentRow = row;
+        let row = btn.closest("tr");
+        currentRow = row;
 
-  let name = row.cells[1].innerText;
-  let price = row.cells[3].innerText;
+        let name = row.cells[1].innerText;
+        let price = row.cells[3].innerText;
 
-  // حط القيم داخل المودال
-  document.querySelector('#edit-product input[type="text"]').value = name;
-  document.querySelectorAll('#edit-product input[type="text"]')[1].value = price;
-}
-
-
-// ================== حفظ التعديل ==================
-document.querySelector('#edit-product form').addEventListener('submit', function(e){
-  e.preventDefault();
-
-  let inputs = this.querySelectorAll('input[type="text"]');
-
-  let newName = inputs[0].value;
-  let newPrice = inputs[1].value;
-
-  currentRow.cells[1].innerText = newName;
-  currentRow.cells[3].innerText = newPrice;
-
-  // إغلاق المودال
-  bootstrap.Modal.getInstance(document.getElementById('edit-product')).hide();
-});
+        // حط القيم داخل المودال
+        document.querySelector('#edit-product input[type="text"]').value = name;
+        document.querySelectorAll('#edit-product input[type="text"]')[1].value = price;
+      }
 
 
-// ================== حذف ==================
-function deleteProduct(btn) {
-  currentRow = btn.closest("tr");
-}
+      // ================== حفظ التعديل ==================
+      document.querySelector('#edit-product form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        let inputs = this.querySelectorAll('input[type="text"]');
+
+        let newName = inputs[0].value;
+        let newPrice = inputs[1].value;
+
+        currentRow.cells[1].innerText = newName;
+        currentRow.cells[3].innerText = newPrice;
+
+        // إغلاق المودال
+        bootstrap.Modal.getInstance(document.getElementById('edit-product')).hide();
+      });
 
 
-// ================== تأكيد الحذف ==================
-document.querySelector('#delete-product .btn-primary').addEventListener('click', function(){
+      // ================== حذف ==================
+      function deleteProduct(btn) {
+        currentRow = btn.closest("tr");
+      }
 
-  if(currentRow){
-    currentRow.remove();
-  }
 
-  bootstrap.Modal.getInstance(document.getElementById('delete-product')).hide();
-});
+      // ================== تأكيد الحذف ==================
+      document.querySelector('#delete-product .btn-primary').addEventListener('click', function () {
 
-</script>
+        if (currentRow) {
+          currentRow.remove();
+        }
+
+        bootstrap.Modal.getInstance(document.getElementById('delete-product')).hide();
+      });
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 

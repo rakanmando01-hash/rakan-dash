@@ -128,7 +128,7 @@
                                     <div class="msg-content">
 
                                         <div class="msg-top">
-                                            <span class="msg-name">محمد علي</span>
+                                            <span class="msg-name">سارة علي</span>
                                             <hr>
                                             <span class="msg-time text-black">قبل 20 دقيقة</span>
                                         </div>
@@ -204,8 +204,9 @@
 
 
 
-                        <a href="" class="position-relative bell" data-bs-toggle="tooltip" title="التعليقات"><i
-                                class="fa-regular fa-bell"></i></a>
+                        <a href="" class="position-relative bell" data-bs-toggle="tooltip" title="التعليقات">
+                            <i class="fa-regular fa-comment-dots"></i>
+                        </a>
                         <a href="" class="position-relative heart" data-bs-toggle="tooltip" title="المفضلة"><i
                                 class="fa-regular fa-heart"></i></a>
                     </div>
@@ -907,84 +908,92 @@
                     <!--  end delete product  -->
 
 
-    <!--start edit product  -->
+                    <!--start edit product  -->
 
-    <div class="modal fade " id="edit-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">تعديل المقال </h1>
-            <button type="button" class="text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
+                    <div class="modal fade " id="edit-product" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">تعديل المقال </h1>
+                                    <button type="button" class="text-white" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
 
-            <form>
-              <div class="row">
-                <div class="mb-3 col">
-                  <label class="form-label text-white">اسم المنتج :</label>
-                  <input type="text" class="form-control" placeholder="الرجاء ادخال اسم المنتج"
-                    value="	AirPods Pro (2nd Gen)">
+                                    <form>
+                                        <div class="row">
+                                            <div class="mb-3 col">
+                                                <label class="form-label text-white">اسم المنتج :</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="الرجاء ادخال اسم المنتج"
+                                                    value="	AirPods Pro (2nd Gen)">
 
-                </div>
+                                            </div>
 
-                <div class="mb-3 col">
-                  <label class="form-label text-white">سعر المنتج :</label>
-                  <input type="text" class="form-control" placeholder="الرجاء ادخال سعر المنتج" value="290$">
-                </div>
-              </div>
+                                            <div class="mb-3 col">
+                                                <label class="form-label text-white">سعر المنتج :</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="الرجاء ادخال سعر المنتج" value="290$">
+                                            </div>
+                                        </div>
 
-              <div class="row">
-                <div class="mb-3 col">
-                  <label class="form-label text-white">الحالة :</label>
-                  <div class="dropdown">
-                    <button class=" dropdown-toggle w-100 text-white" type="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      الحالة
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li> <a href="" class="btn btn-success btn-sm w-100">متوفر</a></li>
-                      <li> <a href="" class="btn btn-danger btn-sm w-100">غير متوفر </a></li>
+                                        <div class="row">
+                                            <div class="mb-3 col">
+                                                <label class="form-label text-white">الحالة :</label>
+                                                <div class="dropdown">
+                                                    <button class=" dropdown-toggle w-100 text-white" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        الحالة
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li> <a href="" class="btn btn-success btn-sm w-100">متوفر</a>
+                                                        </li>
+                                                        <li> <a href="" class="btn btn-danger btn-sm w-100">غير متوفر
+                                                            </a></li>
 
-                    </ul>
-                  </div>
-                </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
 
 
-                <div class="mb-3 col">
-                  <label class="form-label text-white">رقم المنتج :</label>
-                  <input type="text" class="form-control" placeholder="الرجاء ادخال رقم المنتج" value="1">
-                </div>
-              </div>
+                                            <div class="mb-3 col">
+                                                <label class="form-label text-white">رقم المنتج :</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="الرجاء ادخال رقم المنتج" value="1">
+                                            </div>
+                                        </div>
 
-              <div>
-                <label class="form-label text-white">التفاصيل :</label>
-                <textarea class="form-control" name="" id=""></textarea>
-              </div>
+                                        <div>
+                                            <label class="form-label text-white">التفاصيل :</label>
+                                            <textarea class="form-control" name="" id=""></textarea>
+                                        </div>
 
-              <div class="mb-3 p-2">
-                <label for="formFile" class="form-label text-white p-1">تحميل صورة المنتج :</label>
-                <input class="form-control" type="file" name="" id="">
-              </div>
+                                        <div class="mb-3 p-2">
+                                            <label for="formFile" class="form-label text-white p-1">تحميل صورة المنتج
+                                                :</label>
+                                            <input class="form-control" type="file" name="" id="">
+                                        </div>
 
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                  ✖ إغلاق
-                </button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                                ✖ إغلاق
+                                            </button>
 
-                <button type="submit" class="btn btn-primary">
-                  💾 حفظ المقال
-                </button>
+                                            <button type="submit" class="btn btn-primary">
+                                                💾 حفظ المقال
+                                            </button>
 
-              </div>
+                                        </div>
 
-            </form>
-          </div>
+                                    </form>
+                                </div>
 
-        </div>
-      </div>
-    </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!--  end edit product  -->
+                    <!--  end edit product  -->
 
 
 
