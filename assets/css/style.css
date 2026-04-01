@@ -2142,3 +2142,108 @@ padding-right: 10px;
   transform: scale(1.1);
   box-shadow: 0 0 12px rgba(13, 110, 253, 0.6);
 }
+
+/* تثبيت الهيدر بدون تخريب الكود القديم */
+.messages-area {
+    max-height: 400px !important;
+    overflow-y: auto !important;
+}
+
+/* الهيدر يبقى ثابت */
+.messages-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+
+    background: #1e2b45 !important;
+    padding: 10px !important;
+}
+
+
+.messages-area {
+    max-height: 400px !important;
+    overflow-y: auto !important;
+    position: absolute; /* خليه متل ما هو */
+}
+
+.messages-header {
+    position: sticky !important;
+    top: 0;
+    z-index: 9999; /* عالي جداً */
+
+    background: #1e2b45; /* نفس الخلفية */
+    padding: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4); /* يعطيه طبقة */
+}
+
+.messages-header h4 {
+    margin: 0;
+}
+
+
+.messages-area {
+    overflow: hidden !important;   /* يمنع ظهور أي شي فوق */
+}
+
+.messages-area {
+    overflow-y: auto !important;   /* ويرجع يفعل السكرول */
+}
+
+.messages-header {
+    display: block !important;
+}
+
+
+
+/* === FINAL FIX === */
+
+/* الكارد كامل */
+.messages-area {
+    position: absolute !important;
+    top: 45px !important;
+    right: -90px !important;
+
+    width: 320px !important;
+    max-height: 400px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+    background: #1e2b45 !important;
+    border-radius: 10px !important;
+
+    z-index: 9999 !important;
+}
+
+/* الهيدر (أحدث الرسائل) */
+.messages-header {
+    position: sticky !important;
+    top: 0 !important;
+
+    margin: 0 !important;
+    padding: 12px !important;
+
+    background: #1e2b45 !important;
+    z-index: 99999 !important;
+
+    display: block !important;
+    text-align: center !important;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4) !important;
+}
+
+/* إزالة أي فراغ فوق العنوان */
+.messages-header h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ضمان عدم ظهور أي عنصر فوق الهيدر */
+.messages-area .message-item {
+    position: relative;
+    z-index: 1;
+}
