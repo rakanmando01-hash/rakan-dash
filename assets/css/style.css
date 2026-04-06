@@ -1009,7 +1009,7 @@ font-size: 22px;
 
     /* الهيدر يرتب */
     .header {
-        flex-wrap: wrap;
+     
         gap: 10px;
     }
 
@@ -2246,4 +2246,68 @@ padding-right: 10px;
 .messages-area .message-item {
     position: relative;
     z-index: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-header,
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .header .icons {
+        gap: 8px !important;
+    }
+
+    .avatar img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.right-header a {
+    margin-left: 6px;
+}
+
+@media (max-width: 768px) {
+    .header .icons a,
+    .header .icons i {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* @media (max-width: 767px) {
+    .messages-area {
+        transform: translateX(15px);
+    }
+} */
+
+@media (max-width: 767px) {
+    .messages-area {
+        right: -120px !important; /* كان -90 */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 52px !important; /* بدل 57 */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        border-bottom: none !important;
+    }
 }
